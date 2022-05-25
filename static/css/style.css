@@ -42,6 +42,8 @@ a {
     color: #83DEF1;
 }
 
+/* home page */
+
 .section {
     padding: 1.5rem;
 }
@@ -105,6 +107,8 @@ a {
     padding: 1.5rem;
 }
 
+/* faq */
+
 .accordion {
     background-color: #83DEF1;
     color: black;
@@ -130,13 +134,8 @@ a {
     width: 40vw;
   }
 
-  .badge {
-    width: 7vw;
-    position: absolute;
-    top: 0;
-    right: 1vw;
-}
 /*about page*/
+
 .text {
     font-size: 1rem;
 }
@@ -214,6 +213,8 @@ div.divContainer {
     }
 }
 
+/* nav bar */
+
 ul {
     list-style-type: none;
     margin: 0;
@@ -257,4 +258,11 @@ nav {
     left: 1vh;
     width: 3rem;
     height: 3rem;
+}
+
+.badge {
+    width: 7vw;
+    position: absolute;
+    top: 0;
+    right: 1vw;
 }
