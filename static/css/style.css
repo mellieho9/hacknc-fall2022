@@ -266,3 +266,57 @@ nav {
     top: 0;
     right: 1vw;
 }
+
+/* resources */
+
+.past-winner-section {
+    padding: 1.5rem;
+}
+
+.past-winner-box {
+    border-radius: 5px;
+    background-color: paleturquoise;
+    width:300px;
+    padding: 50px;
+    margin: 30px;
+}
+.past-winner-container {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 90vw;
+}
+
+.img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+
+}
+
+
+.HackNCButton2020 {
+	background-color: #006A94;
+	border-radius:5px;
+	display:block;
+	cursor:pointer;
+	color:#ffffff;
+	font-size:22px;
+	padding:50px 200px;
+	text-decoration:none;
+    margin-bottom: 20px;
+    float: left;
+}
+.HackNCButton2020:hover {
+	background-color:rgb(25, 153, 153);
+}
+.HackNCButton2020:active {
+	position:relative;
+	top:1px;
+}
+
