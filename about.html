@@ -21,11 +21,11 @@
         <div class="section">
 
             <a href="./index.html">
-                <img class="logo" src="./static/assets/images/logo.PNG">
+                <img class="logo" src="./static/assets/images/icons/logo.PNG">
             </a>
 
             <a href="https://mlh.io/seasons/2022/events" target="_blank">
-                <img class="badge" src="static/assets/images/mlh-badge-2022.svg" alt="MLH Badge">
+                <img class="badge" src="static/assets/images/icons/mlh-badge-2022.svg" alt="MLH Badge">
             </a>
 
             <nav>
@@ -41,11 +41,11 @@
             <h1>About Us</h1>
             
             <div class="about-container">
-                <div style="flex: 40%">
-                    <img style="width: 35vw" src="./static/assets/images/tempteampic.webp">
+                <div style="flex: 30vw">
+                    <img style="width: 35vw" src="./static/assets/images/team.JPG">
                 </div>
-                <div style="flex: 60%">
-                    <h4>Purpose Statement</h4>
+                <div style="flex: 40vw">
+                    <h4 style="margin-top: 0">Purpose Statement</h4>
                     <p class="text">HackNC is a weekend for students of all skill levels to broaden their talents.
                         Your challenge is to make an awesome project in just 24 hours. You will have access to
                         hands-on workshops and demos from our sponsors, as well as exciting talks about the awesome
@@ -58,6 +58,9 @@
                 </div>
             </div>
         </div>
+
+
+    <!--   
         <div class="section"><h4>History</h4></div>
         <div class="history section">
 
@@ -79,66 +82,58 @@
                     <p class="text box">yes</p>
                 </div>
             </div>
-        </div>
-        <div class = "flex-container"><h4>Our Team</h4></div>
+        </div>--> 
 
-        <div class="slideshowContainer">
-            <div class="mySlides fade">
-                <div class="divContainer">
-                    <img src="./static/assets/images/temppic.jpg" class="slideshowimg" alt="cool pic">
-                </div>
-                <div class="divContainer">
-                    <img src="./static/assets/images/temppic.jpg" class="slideshowimg" alt="cool pic">
-                </div>
-            </div>
-            <div class="mySlides fade">
-                <div class="divContainer">
-                    <img src="./static/assets/images/temppic.jpg" class="slideshowimg" alt="cool pic">
-                </div>
-                <div class="divContainer">
-                    <img src="./static/assets/images/temppic.jpg" class="slideshowimg" alt="cool pic">
-                </div>
-            </div>
-            <div class="mySlides fade">
-                <div class="divContainer">
-                    <img src="./static/assets/images/temppic.jpg" class="slideshowimg" alt="cool pic">
-                </div>
-                <div class="divContainer">
-                    <img src="./static/assets/images/temppic.jpg" class="slideshowimg" alt="cool pic">
-                </div>
-            </div>
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
+
+        <div class = "flex-container"><h4 style="margin-top: 0">Our Directors</h4>
+
+            <table class="team-pics-table">
+                <tr>
+                    <td style="padding: 2rem; border-collapse: separate;">
+                        <img class="teampic" src="./static/assets/images/team/Thi_Le.JPG">
+                        <p class="name">Thi Li</p>
+                        <p class="title">Co-Lead Director</p>
+                    </td>
+                    <td style="padding: 2rem; border-collapse: separate;">
+                        <img class="teampic" src="./static/assets/images/team/Rohan_Akki.JPG">
+                        <p class="name">Rohan Akki</p>
+                        <p class="title">Co-Lead Director</p>
+                    </td>
+                    <td style="padding: 2rem; border-collapse: separate;">
+                        <img class="teampic" src="./static/assets/images/team/Brianna_Ta.JPG">
+                        <p class="name">Brianna Ta</p>
+                        <p class="title">Director of Development</p>
+                    </td>
+                    <td style="padding: 2rem; border-collapse: separate;">
+                        <img class="teampic" src="./static/assets/images/team/Koushik_Sridhar.JPG">
+                        <p class="name">Koushik Sridhar</p>
+                        <p class="title">Director of Sponsorship</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding: 2rem; border-collapse: separate;">
+                        <img class="teampic" src="./static/assets/images/team/Annabelle_Jiang.JPG">
+                        <p class="name">Annabelle Jiang</p>
+                        <p class="title">Director of Graphics</p>
+                    </td>
+                    <td style="padding: 2rem; border-collapse: separate;">
+                        <img class="teampic" src="./static/assets/images/team/Lucy_Ren.jpeg">
+                        <p class="name">Lucy Ren</p>
+                        <p class="title">Director of Logistics</p>
+                    </td>
+                    <td style="padding: 2rem; border-collapse: separate;">
+                        <img class="teampic" src="./static/assets/images/team/SHASHANK_VANGA.png">
+                        <p class="name">Shashank Vanga</p>
+                        <p class="title">Director of Marketing</p>
+                    </td>
+                </tr>
+            </table>
+
+            <div>
         </div>
 
     </main>
-    <script>
-        var slideIndex = 1;
-        showSlides(slideIndex);
-
-        // Next/previous controls
-        function plusSlides(n) {
-            showSlides(slideIndex += n);
-        }
-
-        // Thumbnail image controls
-        function currentSlide(n) {
-            showSlides(slideIndex = n);
-        }
-
-        // function is called when next/prev controls are called
-        function showSlides(n) {
-            var i;
-            var slides = document.getElementsByClassName("mySlides");
-            if (n > slides.length) { slideIndex = 1 }
-            if (n < 1) { slideIndex = slides.length }
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            slides[slideIndex - 1].style.display = "flex";
-        }
-    </script>
 </body>
 
 </html>

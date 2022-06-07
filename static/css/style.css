@@ -11,14 +11,17 @@ h1 {
     font-family: 'Montserrat', sans-serif;
     letter-spacing: .5rem;
     text-align: center;
+    color: #012a3b;
 }
 
 h3 {
     font-size: 3rem;
+    color: #034f6d;
 }
 
 h4 {
     font-size: 2.5rem;
+    color: #034f6d;
 }
 h5 {
     font-size:1.5rem;
@@ -67,7 +70,7 @@ a {
 .about-container {
     height: 100%;
     padding: 0;
-    margin: 0;
+    margin: 5vw;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -387,4 +390,24 @@ nav {
 .track-box:active {
 	position:relative;
 	top:1px;
+}
+
+.teampic {
+    width: 15vw;
+    height: 15vw;
+    border-radius: 50%;
+}
+
+.name {
+    color: #2999BC;
+    font-weight: bold;
+}
+
+.title {
+    font-size: 0.9rem;
+}
+
+.team-pics-table {
+    text-align: center;
+    align-items: center;
 }
