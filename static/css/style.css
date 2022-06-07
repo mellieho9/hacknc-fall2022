@@ -383,6 +383,7 @@ nav {
     background-color: #2999BC;
     padding: 1rem 2rem;
     margin: 1rem;
+    width: 25vw;
   }
   .track-box:hover {
 	background-color:rgb(25, 153, 153);
@@ -390,6 +391,12 @@ nav {
 .track-box:active {
 	position:relative;
 	top:1px;
+}
+
+.track {
+    font-size: 3rem;
+    letter-spacing: normal;
+    color: white !important;
 }
 
 .teampic {
@@ -411,3 +418,13 @@ nav {
     text-align: center;
     align-items: center;
 }
+
+.accord {
+    cursor: pointer;
+    transition: 0.4s;
+  }
+  
+  .panell {
+    display: none;
+    overflow: hidden;
+  }
