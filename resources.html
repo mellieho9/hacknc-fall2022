@@ -21,7 +21,7 @@
         <div class="section">
 
             <a href="./index.html">
-                <img class="logo" src="./static/assets/images/icons/logo.PNG">
+                <img class="logo" src="./static/assets/images/icons/logo.png">
             </a>
 
             <a href="https://mlh.io/seasons/2022/events" target="_blank">
@@ -119,15 +119,15 @@
         </div>
         </div>
             <div class = "past-winner-container">
-                <div class = "track-box">
-                    <h1 class="track accord">General</h1>
-                    <div class="panell">
+                <div class = "track-box" onClick="togglepanel1()">
+                    <h1 class="track">General</h1>
+                    <div class="panell" id="panel1">
                         <p>Think about some common problems that we face in today's world and possible solutions to them. Some common focus areas are health, sustainability, finance, and entertainment.</p>
                     </div>
                 </div>
-                <div class = "track-box">
-                    <h1 class="track accord">Beginners</h1>
-                    <div class="panell">
+                <div class = "track-box" onClick="togglepanel2()">
+                    <h1 class="track">Beginners</h1>
+                    <div class="panell" id="panel2">
                     <p>If you're having trouble thinking of a beginner-friendly project, you could make a simple game, mobile app, or website! Check out our simple workshops and coding resources for great starting points.</p>
                     </div>
                 </div>
@@ -139,23 +139,23 @@
     </main>
 
     <script>
-        var acc = document.getElementsByClassName("accord");
-        var i;
 
-        for (i = 0; i < acc.length; i++) {
-        acc[i].addEventListener("click", function() {
-            /* Toggle between adding and removing the "active" class,
-            to highlight the button that controls the panel */
-            this.classList.toggle("active");
-
-            /* Toggle between hiding and showing the active panel */
-            var panel = this.nextElementSibling;
+        function togglepanel1() {
+            var panel = document.getElementById('panel1');
             if (panel.style.display === "block") {
             panel.style.display = "none";
             } else {
             panel.style.display = "block";
             }
-        });
+        }
+
+        function togglepanel2() {
+            var panel = document.getElementById('panel2');
+            if (panel.style.display === "block") {
+            panel.style.display = "none";
+            } else {
+            panel.style.display = "block";
+            }
         }
     </script>
 

@@ -385,9 +385,7 @@ nav {
     margin: 1rem;
     width: 25vw;
   }
-  .track-box:hover {
-	background-color:rgb(25, 153, 153);
-}
+
 .track-box:active {
 	position:relative;
 	top:1px;
@@ -427,4 +425,5 @@ nav {
   .panell {
     display: none;
     overflow: hidden;
+    color: white !important;
   }
