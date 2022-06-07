@@ -1,0 +1,53 @@
+.sponsor-img {
+    max-width: 20vw;
+    padding: 1.5rem;
+}
+
+/* faq */
+
+.accordion {
+    background-color: #83DEF1;
+    color: black;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    transition: 0.4s;
+    width: 40vw;
+  }
+  
+  .active, .accordion:hover {
+    background-color: #2999BC; 
+  }
+  
+  .panel {
+    padding: 0 18px;
+    display: none;
+    background-color: white;
+    overflow: hidden;
+    width: 40vw;
+  }
+
+  .HackNCButton2020 {
+	background-color: #006A94;
+	border-radius:5px;
+	display:block;
+	cursor:pointer;
+	color:#ffffff;
+	font-size:22px;
+	padding: 1rem 1rem;
+	text-decoration:none;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    float: left;
+}
+.HackNCButton2020:hover {
+	background-color:rgb(25, 153, 153);
+}
+.HackNCButton2020:active {
+	position:relative;
+	top:1px;
+}

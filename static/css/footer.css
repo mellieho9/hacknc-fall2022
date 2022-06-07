@@ -1,0 +1,52 @@
+.footer-column {
+    float: left;
+    flex: 30vw;
+    }
+
+    .left {
+    width: 40%;
+    height: 25%;
+    }
+
+    .middle {
+    width: 35%;
+    height:25%;
+    }
+    
+    .right {
+    width: 25%;
+    height:25%;
+    }
+
+    .footer-row:after {
+    content: "";
+    display: table;
+    clear: both;
+    }
+
+.footer-row {
+    background-color: #034f6d;
+    display: flex;
+    padding: 2rem;
+}
+
+.footer-link {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+}
+
+.footer-email {
+    color: white;
+}
+
+.footer-text {
+    color: #83DEF1;
+}
+
+.footer-icon {
+    margin: 0.25rem;
+}
