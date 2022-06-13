@@ -14,7 +14,6 @@
     <link rel="stylesheet" href="static/css/style.css">
     <link rel="stylesheet" href="static/css/nav.css">
     <link rel="stylesheet" href="static/css/home.css">
-    <link rel="stylesheet" href="static/css/resources.css">
     <link rel="stylesheet" href="static/css/footer.css">
     
     <script src="https://kit.fontawesome.com/be677f01a1.js" crossorigin="anonymous"></script>
@@ -46,18 +45,18 @@
                         </ul>
                     </div>
                 </nav>
-
-                <img src='./static/assets/images/icons/hamburger.svg' class='hamburger'/>
-                <nav class="mobile-nav">
-                    <div>
+                <div class="row mobile-bar">
+                    <img src='./static/assets/images/icons/hamburger.svg' id="hamburger" class='hamburger' onClick="mobileMenu()"/>
+                    <nav class="mobile-nav" id="mobile-nav">
                         <ul>
-                            <li class="mobile-nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                            <li class="mobile-nav-item"><a class="nav-link" href="about.html">About</a></li>
-                            <li class="mobile-nav-item"><a class="nav-link" href="schedule.html">Schedule</a></li>
-                            <li class="mobile-nav-item"><a class="nav-link" href="resources.html">Resources</a></li>
+                            <li><a class="nav-link" href="index.html">Home</a></li>
+                            <li><a class="nav-link" href="about.html">About</a></li>
+                            <li><a class="nav-link" href="schedule.html">Schedule</a></li>
+                            <li><a class="nav-link" href="resources.html">Resources</a></li>
                         </ul>
-                    </div>
-                </nav>
+                    </nav>
+                </div>
+                
 
                 <img class="mobile-logo" src="./static/assets/images/icons/logo.png"/>
             
@@ -263,6 +262,22 @@
             panel.style.display = "block";
             }
         });
+        }
+    </script>
+
+    <script>
+        function mobileMenu() {
+            var menu = document.getElementById('hamburger');
+            var mobileNav = document.getElementById('mobile-nav');
+            if (mobileNav.style.display === "inline") {
+                mobileNav.style.display = "none";
+                menu.src = "./static/assets/images/icons/hamburger.svg";
+                menu.style.width = "3rem";
+            } else {
+                mobileNav.style.display = "inline";
+                menu.src = "./static/assets/images/icons/x.svg";
+                menu.style.width = "2.5rem";
+            }
         }
     </script>
 

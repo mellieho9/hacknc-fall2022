@@ -31,26 +31,26 @@
   }
 
   .HackNCButton2020 {
-	background-color: #006A94;
-	border-radius:5px;
-	display:block;
-	cursor:pointer;
-	color:#ffffff;
-	font-size:22px;
-	padding: 1rem 1rem;
-	text-decoration:none;
-    margin-bottom: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
-    float: left;
-}
-.HackNCButton2020:hover {
-	background-color:rgb(25, 153, 153);
-}
-.HackNCButton2020:active {
-	position:relative;
-	top:1px;
-}
+    background-color: #006A94;
+    border-radius:5px;
+    display:block;
+    cursor:pointer;
+    color:#ffffff;
+    font-size:22px;
+    padding: 1rem 1rem;
+    text-decoration:none;
+      margin-bottom: 20px;
+      margin-left: 20px;
+      margin-right: 20px;
+      float: left;
+  }
+  .HackNCButton2020:hover {
+    background-color:rgb(25, 153, 153);
+  }
+  .HackNCButton2020:active {
+    position:relative;
+    top:1px;
+  }
 
 .image1 {
   display: inline;
@@ -64,6 +64,52 @@
 .right-div {
   flex: 70%;
   margin-left: 2rem;
+}
+
+.past-winner-container {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 90vw;
+}
+
+.accord {
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.panell {
+  display: none;
+  overflow: hidden;
+  color: white !important;
+}
+
+.track-box {
+  border-radius: 10px;
+  background-color: #2999BC;
+  padding: 1rem 2rem;
+  margin: 1rem;
+  width: 25vw;
+}
+
+.track-box:active {
+position:relative;
+top:1px;
+}
+
+.track-box:hover {
+  cursor: pointer;
+  opacity: 90%;
+}
+
+.track {
+  font-size: 3rem;
+  letter-spacing: normal;
+  color: white !important;
 }
 
 @media only screen and (max-width: 600px) {
@@ -101,5 +147,9 @@
     .sponsor-img {
       max-width: 45vw;
   }
+    
+  .track-box {
+        width: 75vw;
+      }
 
   }

@@ -82,20 +82,24 @@ nav {
         display: inline;
         position: absolute;
         top: 1rem;
-        right: 1rem;
+        left: 1rem;
         width: 3rem;
     }
 
-    .mobile-nav-item {
-        color: white;
-        padding: 14px 16px;
-        text-decoration: none;
-        font-size: 17px;
-        display: block;
+    .mobile-nav {
+        position: absolute;
+        top: 1rem;
+        left: 4rem;
+        padding: 0;
+        width: 90vw;
     }
 
     .mobile-logo {
         display: inline;
         width: 10rem;
+    }
+
+    .mobile-bar {
+        background: #83DEF1;
     }
   }
