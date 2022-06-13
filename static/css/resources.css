@@ -81,6 +81,7 @@
     margin-left: 20px;
     margin-right: 20px;
     float: left;
+    text-align: center;
 }
 .HackNCButton2020:hover {
 	background-color:rgb(25, 153, 153);
@@ -138,9 +139,36 @@
     vertical-align: middle;
   }
 
+  .top {
+    max-width: 80vw;
+    padding-left: 10vw;
+  }
+
   @media only screen and (max-width: 600px) {
     .track-box {
-        width: 75vw;
+        width: 60vw;
       }
+
+    .HackNCButton2020 {
+        width: 60vw;
+    }
+
+    .track {
+        font-size: 2rem;
+    }
+    
+    .top {
+        margin-top: 5rem;
+        padding-left: 5vw;
+    }
+
+    .pic{
+      width: 60vw;
+      height: auto; 
+  }
+
+  .past-winner-box {
+    width: 75vw;
+  }
 
   }

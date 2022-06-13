@@ -13,8 +13,8 @@
     <title>HackNC 2022</title>
     <link rel="stylesheet" href="static/css/style.css">
     <link rel="stylesheet" href="static/css/nav.css">
-    <link rel="stylesheet" href="static/css/schedule.css">
     <link rel="stylesheet" href="static/css/footer.css">
+    <link rel="stylesheet" href="static/css/schedule.css">
 
     <script src="https://kit.fontawesome.com/be677f01a1.js" crossorigin="anonymous"></script>
 </head>
@@ -33,7 +33,7 @@
                 <img class="badge" src="static/assets/images/icons/mlh-badge-2022.svg" alt="MLH Badge">
             </a>
 
-            <nav>
+            <nav class="nav-bar">
                 <div>
                     <ul>
                         <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
@@ -42,6 +42,17 @@
                     </ul>
                 </div>
             </nav>
+            <div class="row mobile-bar">
+                <img src='./static/assets/images/icons/hamburger.svg' id="hamburger" class='hamburger' onClick="mobileMenu()"/>
+                <nav class="mobile-nav" id="mobile-nav">
+                    <ul>
+                        <li><a class="nav-link" href="index.html">Home</a></li>
+                        <li><a class="nav-link" href="about.html">About</a></li>
+                        <li><a class="nav-link" href="schedule.html">Schedule</a></li>
+                        <li><a class="nav-link" href="resources.html">Resources</a></li>
+                    </ul>
+                </nav>
+            </div>
 
             <h1>Schedule</h1>
             <div>
@@ -54,13 +65,13 @@
         <div class="footer-row">
             <div style="flex: 40vw; text-align: center; margin-left: 5vw;">
                <br>
-                <h1 style="font-size:2.2vw; color: #83DEF1;">Hack NC 2022</h1>
+                <h1 class="footer-title">Hack NC 2022</h1>
                 <p class="footer-text"> Contact us at <a class="footer-email" href="mailto:hello@hacknc.com">hello@hacknc.com!</a></p>
             </div>
     
             <div style="flex: 20vw;  margin-left: 5vw;">
     
-                <h2 class="footer-text" style="font-size:2.2vw; color: 004059">Site Map</h2>
+                <h2 class="footer-text">Site Map</h2>
                 <a class="footer-link" href="https://fall2022.hacknc.com/about.html">About</a><br>
                 <a class="footer-link" href="https://fall2022.hacknc.com/schedule.html">Schedule</a><br>
                 <a class="footer-link" href="eventslink">Events</a><br>
@@ -89,6 +100,22 @@
         </div>
 
     </main>
+
+    <script>
+        function mobileMenu() {
+            var menu = document.getElementById('hamburger');
+            var mobileNav = document.getElementById('mobile-nav');
+            if (mobileNav.style.display === "inline") {
+                mobileNav.style.display = "none";
+                menu.src = "./static/assets/images/icons/hamburger.svg";
+                menu.style.width = "3rem";
+            } else {
+                mobileNav.style.display = "inline";
+                menu.src = "./static/assets/images/icons/x.svg";
+                menu.style.width = "2.5rem";
+            }
+        }
+    </script>
 
 </body>
 
