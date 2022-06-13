@@ -66,4 +66,8 @@
         flex-direction: column;
         text-align: center;
     }
+
+    .footer-title {
+        font-size:1.75rem;
+    }
   }
