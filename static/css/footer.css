@@ -49,4 +49,21 @@
 
 .footer-icon {
     margin: 0.25rem;
+    color: #83DEF1;
 }
+
+.footer-icon:hover {
+    opacity: 80%;
+}
+
+.footer-title {
+    font-size:1.5rem;
+    color: #83DEF1 !important;
+}
+
+@media only screen and (max-width: 600px) {
+    .footer-row {
+        flex-direction: column;
+        text-align: center;
+    }
+  }

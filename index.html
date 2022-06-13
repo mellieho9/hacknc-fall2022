@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="static/css/style.css">
     <link rel="stylesheet" href="static/css/nav.css">
     <link rel="stylesheet" href="static/css/home.css">
+    <link rel="stylesheet" href="static/css/resources.css">
     <link rel="stylesheet" href="static/css/footer.css">
     
     <script src="https://kit.fontawesome.com/be677f01a1.js" crossorigin="anonymous"></script>
@@ -36,7 +37,7 @@
                     <img class="badge" src="static/assets/images/icons/mlh-badge-2022.svg" alt="MLH Badge">
                 </a>
 
-                <nav>
+                <nav class="nav-bar">
                     <div>
                         <ul>
                             <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
@@ -45,20 +46,31 @@
                         </ul>
                     </div>
                 </nav>
+
+                <img src='./static/assets/images/icons/hamburger.svg' class='hamburger'/>
+                <nav class="mobile-nav">
+                    <div>
+                        <ul>
+                            <li class="mobile-nav-item"><a class="nav-link" href="about.html">About</a></li>
+                            <li class="mobile-nav-item"><a class="nav-link" href="schedule.html">Schedule</a></li>
+                            <li class="mobile-nav-item"><a class="nav-link" href="resources.html">Resources</a></li>
+                        </ul>
+                    </div>
+                </nav>
             
                 <h1>HackNC 2022</h1>
                 <!-- replace with real date -->
                 <h4>November 4 - 6, 2022</h4>
-                <p id="countdown"></p>
+                <p id="countdown" class="countdown"></p>
             </div>
         </div>
 
         <div class="section">
             <div class="about-container">
                 <div style="flex: 30%">
-                    <img style="width: 25vw" src="./static/assets/images/tempoctopus.png">
+                    <img class="image1" src="./static/assets/images/tempoctopus.png">
                 </div>
-                <div style="flex: 70%; margin-left: 2rem;">
+                <div class="right-div">
                     <h3>What is HackNC?</h4>
                     <p>HackNC is an annual, student-run hackathon hosted by the University of North Carolina at Chapel Hill. Every fall, hundreds of students arrive at UNC (this year, we'll be having a hybrid hackathon!) to spend the weekend inventing something amazing. We’re one of the largest hackathons in the southeastern United States.</p>
                     <br>
@@ -66,6 +78,7 @@
                         More About Us
                     </a>
                 </div>
+                <img class="image2" src="./static/assets/images/tempoctopus.png">
             </div>
         </div>
 
@@ -147,8 +160,28 @@
 
         <div class="section">
             <div class="flex-container">
+                <h3>Tracks</h3>
+                <div class = "past-winner-container">
+                    <div class = "track-box" onClick="togglepanel1()">
+                        <h1 class="track">General</h1>
+                        <div class="panell" id="panel1">
+                            <p>Think about some common problems that we face in today's world and possible solutions to them. Some common focus areas are health, sustainability, finance, and entertainment.</p>
+                        </div>
+                    </div>
+                    <div class = "track-box" onClick="togglepanel2()">
+                        <h1 class="track">Beginners</h1>
+                        <div class="panell" id="panel2">
+                        <p>If you're having trouble thinking of a beginner-friendly project, you could make a simple game, mobile app, or website! Check out our simple workshops and coding resources for great starting points.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="flex-container">
                 <h3>Sponsors</h3>
-                <p>Interested in sponsoring HackNC? Email us at <a href="mailto:sponsorship@hacknc.com">sponsorship@hacknc.com</a>.</p>
+                <p class="sponsor-sec">Interested in sponsoring HackNC? Email us at <a href="mailto:sponsorship@hacknc.com">sponsorship@hacknc.com</a>.</p>
             </div>
                 <br>
             <div class="sponsor-container">
@@ -166,7 +199,7 @@
         <div class="footer-row">
             <div style="flex: 40vw; text-align: center; margin-left: 5vw;">
                <br>
-                <h1 style="font-size:2.2vw; color: #83DEF1;">Hack NC 2022</h1>
+                <h1 class="footer-title">Hack NC 2022</h1>
                 <p class="footer-text"> Contact us at <a class="footer-email" href="mailto:hello@hacknc.com">hello@hacknc.com!</a></p>
             </div>
     
@@ -222,6 +255,27 @@
             panel.style.display = "block";
             }
         });
+        }
+    </script>
+
+    <script>
+
+        function togglepanel1() {
+            var panel = document.getElementById('panel1');
+            if (panel.style.display === "block") {
+            panel.style.display = "none";
+            } else {
+            panel.style.display = "block";
+            }
+        }
+
+        function togglepanel2() {
+            var panel = document.getElementById('panel2');
+            if (panel.style.display === "block") {
+            panel.style.display = "none";
+            } else {
+            panel.style.display = "block";
+            }
         }
     </script>
 

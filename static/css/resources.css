@@ -22,6 +22,11 @@
 	top:1px;
 }
 
+.track-box:hover {
+    cursor: pointer;
+    opacity: 90%;
+}
+
 .track {
     font-size: 3rem;
     letter-spacing: normal;
@@ -62,7 +67,6 @@
     width: 50%;
 
 }
-
 
 .HackNCButton2020 {
 	background-color: #006A94;
@@ -132,4 +136,11 @@
   .column img {
     margin-top: 8px;
     vertical-align: middle;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .track-box {
+        width: 75vw;
+      }
+
   }

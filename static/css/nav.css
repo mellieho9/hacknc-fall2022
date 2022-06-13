@@ -48,3 +48,46 @@ nav {
     top: 0;
     right: 1vw;
 }
+
+.nav-bar {
+    display: inline;
+}
+
+.mobile-nav {
+    display: none;
+}
+
+.hamburger {
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .nav-bar {
+        display: none;
+    }
+
+    .badge {
+        display: none;
+    }
+
+    .logo {
+        width: 4rem;
+        height: 4rem;
+    }
+
+    .hamburger {
+        display: inline;
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        width: 4rem;
+    }
+
+    .mobile-nav-item {
+        color: white;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+    }
+  }
