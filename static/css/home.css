@@ -24,10 +24,11 @@
   
   .panel {
     padding: 0 18px;
-    display: none;
+    max-height: 0;
     background-color: white;
     overflow: hidden;
     width: 40vw;
+    transition: max-height 0.5s ease-out;
   }
 
   .HackNCButton2020 {
@@ -84,8 +85,9 @@
 }
 
 .panell {
-  display: none;
+  max-Height: 0;
   overflow: hidden;
+  transition: max-height 0.5s ease-out;
   color: white !important;
 }
 
