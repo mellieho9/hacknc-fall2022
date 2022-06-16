@@ -3,6 +3,12 @@
     padding: 1.5rem;
 }
 
+.landing {
+  background-image: url("../assets/images/templandingpage.webp");
+  background-size: cover;
+  height: 100vh;
+}
+
 /* faq */
 
 .accordion {
@@ -152,5 +158,10 @@ top:1px;
   .track-box {
         width: 75vw;
       }
+
+      .landing {
+        opacity: 90%;
+        /*background-image: url("../assets/images/mobile-landing.png");*/
+    }
 
   }

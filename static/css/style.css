@@ -50,12 +50,6 @@ a {
     padding: 1.5rem;
 }
 
-.landing {
-    background-image: url("../assets/images/templandingpage.webp");
-    background-size: cover;
-    height: 100vh;
-}
-
 .flex-container {
     height: 100%;
     padding: 0;
@@ -138,9 +132,5 @@ a {
 
     p {
         font-size: 1rem;
-    }
-
-    .landing {
-        opacity: 90%;
     }
   }
