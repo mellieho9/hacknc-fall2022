@@ -66,7 +66,20 @@
                 <h1>HackNC 2022</h1>
                 <!-- replace with real date -->
                 <h4>November 4 - 6, 2022</h4>
-                <p id="countdown" class="countdown"></p>
+                <table id="countdown">
+                    <tr>
+                        <td><p id="days" class="count-num"></p></td>
+                        <td><p id="hours" class="count-num"></p></td>
+                        <td><p id="minutes" class="count-num"></p></td>
+                        <td><p id="seconds" class="count-num"></p></td>
+                    </tr>
+                    <tr>
+                        <td><p>DAYS</p></td>
+                        <td><p>HOURS</p></td>
+                        <td><p>MINUTES</p></td>
+                        <td><p>SECONDS</p></td>
+                    </tr>
+                </table>
                 <br>
                 <br>
                 <br>
@@ -361,12 +374,16 @@
             var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
             var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-            document.getElementById("countdown").innerHTML = days + " Days, " + hours + " Hours, "
+            document.getElementById("days").innerHTML = days;
+            document.getElementById("hours").innerHTML = hours;
+            document.getElementById("minutes").innerHTML = minutes;
+            document.getElementById("seconds").innerHTML = seconds;
+             + " Days, " + hours + " Hours, "
                 + minutes + " Minutes, " + seconds + " Seconds ";
 
             if (distance < 0) {
                 clearInterval(x);
-                document.getElementById("countdown").innerHTML = "Happy Hacking!";
+                document.getElementById("countdown").style.display = none;
             }
         }, 1000);
     </script>
