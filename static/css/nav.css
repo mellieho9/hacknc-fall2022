@@ -61,10 +61,6 @@ nav {
     display: none;
 }
 
-.mobile-logo {
-    display: none;
-}
-
 @media only screen and (max-width: 600px) {
     .nav-bar {
         display: none;
@@ -92,11 +88,6 @@ nav {
         left: 4rem;
         padding: 0;
         width: 90vw;
-    }
-
-    .mobile-logo {
-        display: inline;
-        width: 10rem;
     }
 
     .mobile-bar {

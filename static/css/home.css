@@ -4,7 +4,7 @@
 }
 
 .landing {
-  background-image: url("../assets/images/templandingpage.webp");
+  background-image: url("../assets/images/landing.png");
   background-size: cover;
   height: 100vh;
 }
@@ -163,25 +163,47 @@ top:1px;
 
       .landing {
         opacity: 90%;
-        /*background-image: url("../assets/images/mobile-landing.png");*/
+        background-image: url("../assets/images/mobile-landing.png");
+    }
+    
+    .countdown {
+      top: 75vh !important;
+      left: 2vw !important;
+      text-align: center;
+      color: white;
+      background-color: #2999bc;
+      border-radius: 25px;
+      padding-left: 2rem;
+      padding-right: 1.5rem;
+    }
+    .count-num {
+      color: white !important;
     }
 
   }
 
   td {
-    width: 10vw;
+    width: 5vw;
     text-align: center;
-    padding: 0 2vw;
+    padding: 0 1vw;
   }
 
   .count-num {
     color: #012a3b;
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     font-weight: bold;
     padding: 0;
     margin: 0;
+    padding-top: 3vh;
   }
 
   tr {
     padding: 0;
+  }
+
+
+  .countdown {
+    position: absolute;
+    top: 17vh;
+    left: 12vw;
   }

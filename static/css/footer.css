@@ -25,13 +25,14 @@
     }
 
 .footer-row {
-    background-color: #034f6d;
+    background-image: url("../assets/images/footer.png");
+    background-size: cover;
     display: flex;
     padding: 2rem;
 }
 
 .footer-link {
-    color: white;
+    color: #006A94;
     text-decoration: none;
 }
 
@@ -40,16 +41,16 @@
 }
 
 .footer-email {
-    color: white;
+    color: #006A94;
 }
 
 .footer-text {
-    color: #83DEF1;
+    color: #012a3b;
 }
 
 .footer-icon {
     margin: 0.25rem;
-    color: #83DEF1;
+    color: #006A94;
 }
 
 .footer-icon:hover {
@@ -58,17 +59,28 @@
 
 .footer-title {
     font-size:1.5rem;
-    color: #83DEF1 !important;
+    color: #012a3b !important;
+}
+
+.footer-icons {
+    flex: 30vw;
+    margin-top: 12vh;
 }
 
 @media only screen and (max-width: 600px) {
     .footer-row {
         flex-direction: column;
         text-align: center;
+        background-image: url("../assets/images/mobile-footer.png");
     }
 
     .footer-title {
         font-size:1.75rem;
         margin-top: 0;
     }
+
+    .footer-icons {
+        margin-top: 5vh;
+    }
+
   }
