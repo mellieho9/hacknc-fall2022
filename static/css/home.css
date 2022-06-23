@@ -13,7 +13,7 @@
 
 .accordion {
     background-color: #83DEF1;
-    color: black;
+    color: #012a3b;
     cursor: pointer;
     padding: 18px;
     border: none;
@@ -149,10 +149,6 @@ top:1px;
       text-align: center;
     }
 
-    .countdown {
-      font-size: 0.9rem;
-    }
-
     .sponsor-img {
       max-width: 45vw;
   }
@@ -164,20 +160,7 @@ top:1px;
       .landing {
         opacity: 90%;
         background-image: url("../assets/images/mobile-landing.png");
-    }
-    
-    .countdown {
-      top: 75vh !important;
-      left: 2vw !important;
-      text-align: center;
-      color: white;
-      background-color: #2999bc;
-      border-radius: 25px;
-      padding-left: 2rem;
-      padding-right: 1.5rem;
-    }
-    .count-num {
-      color: white !important;
+        background-position: center;
     }
 
   }
@@ -190,7 +173,7 @@ top:1px;
 
   .count-num {
     color: #012a3b;
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     font-weight: bold;
     padding: 0;
     margin: 0;
@@ -203,7 +186,5 @@ top:1px;
 
 
   .countdown {
-    position: absolute;
-    top: 17vh;
-    left: 12vw;
+    text-align: center;
   }

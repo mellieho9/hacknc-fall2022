@@ -11,14 +11,14 @@ li {
 .nav-link {
     text-decoration: none;
     font-weight: 2;
-    color: #2999BC;
+    color: white;
     font-size: 1.5rem;
     font-family: 'Montserrat', sans-serif;
     padding: 1rem;
 }
 
 .nav-link:hover {
-    color: #006A94;
+    color: rgba(255, 255, 255, 0.7);
 }
 
 nav {
@@ -40,6 +40,10 @@ nav {
     left: 1vh;
     width: 3rem;
     height: 3rem;
+}
+
+.logo:hover {
+    opacity: 70%;
 }
 
 .badge {
