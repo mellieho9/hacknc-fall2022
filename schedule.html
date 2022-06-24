@@ -56,7 +56,7 @@
             </div>
 
             <h1>Schedule</h1>
-            <div>
+            <div id="sched">
                 <script src="https://events.timely.fun/embed.js" data-src="https://events.timely.fun/40nk1m96/?range=custom&start_date=2022-11-03&end_date=2022-11-06" data-max-height="0"  id="timely_script" class="timely-script"></script>
             </div>
             <p>*Schedule is subject to change.</p>
@@ -104,18 +104,22 @@
             var mobileNav = document.getElementById('mobile-nav');
             var hamburger = document.getElementById('hamburger');
             var x = document.getElementById('hamburger-x');
+            var sched = document.getElementById('sched');
             mobileNav.style.display = "flex";
             hamburger.style.display = "none";
             x.style.display = "inline";
+            sched.style.display = "none";
         }
 
         function closeMobileMenu() {
             var mobileNav = document.getElementById('mobile-nav');
             var hamburger = document.getElementById('hamburger');
             var x = document.getElementById('hamburger-x');
+            var sched = document.getElementById('sched');
             mobileNav.style.display = "none";
             hamburger.style.display = "inline";
             x.style.display = "none";
+            sched.style.display = "inline";
         }
     </script>
 
