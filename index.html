@@ -48,16 +48,13 @@
                     </div>
                 </nav>
                 <div class="row mobile-bar">
-                    <img src='./static/assets/images/icons/hamburger.svg' id="hamburger" class='hamburger'
-                        onClick="mobileMenu()" />
+                    <img src='./static/assets/images/icons/hamburger.svg' id='hamburger' class='hamburger' onClick="showMobileMenu()" />
                     <nav class="mobile-nav" id="mobile-nav">
-
-                        <ul>
-                            <li><a class="nav-link" href="index.html">Home</a></li>
-                            <li><a class="nav-link" href="about.html">About</a></li>
-                            <li><a class="nav-link" href="schedule.html">Schedule</a></li>
-                            <li><a class="nav-link" href="resources.html">Resources</a></li>
-                        </ul>
+                        <img src='./static/assets/images/icons/x.svg' id='hamburger-x' class='hamburger-x' onClick="closeMobileMenu()" />
+                            <a class="mobile-nav-link" href="index.html">Home</a><br>
+                            <a class="mobile-nav-link" href="about.html">About</a><br>
+                            <a class="mobile-nav-link" href="schedule.html">Schedule</a><br>
+                            <a class="mobile-nav-link" href="resources.html">Resources</a>
                     </nav>
                 </div>
 
@@ -323,18 +320,22 @@
     </script>
 
     <script>
-        function mobileMenu() {
-            var menu = document.getElementById('hamburger');
+        function showMobileMenu() {
             var mobileNav = document.getElementById('mobile-nav');
-            if (mobileNav.style.display === "inline") {
-                mobileNav.style.display = "none";
-                menu.src = "./static/assets/images/icons/hamburger.svg";
-                menu.style.width = "3rem";
-            } else {
-                mobileNav.style.display = "inline";
-                menu.src = "./static/assets/images/icons/x.svg";
-                menu.style.width = "2.5rem";
-            }
+            var hamburger = document.getElementById('hamburger');
+            var x = document.getElementById('hamburger-x');
+            mobileNav.style.display = "flex";
+            hamburger.style.display = "none";
+            x.style.display = "inline";
+        }
+
+        function closeMobileMenu() {
+            var mobileNav = document.getElementById('mobile-nav');
+            var hamburger = document.getElementById('hamburger');
+            var x = document.getElementById('hamburger-x');
+            mobileNav.style.display = "none";
+            hamburger.style.display = "inline";
+            x.style.display = "none";
         }
     </script>
 

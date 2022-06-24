@@ -45,14 +45,13 @@
                 </div>
             </nav>
             <div class="row mobile-bar">
-                <img src='./static/assets/images/icons/hamburger.svg' id="hamburger" class='hamburger' onClick="mobileMenu()"/>
+                <img src='./static/assets/images/icons/hamburger.svg' id='hamburger' class='hamburger' onClick="showMobileMenu()" />
                 <nav class="mobile-nav" id="mobile-nav">
-                    <ul>
-                        <li><a class="nav-link" href="index.html">Home</a></li>
-                        <li><a class="nav-link" href="about.html">About</a></li>
-                        <li><a class="nav-link" href="schedule.html">Schedule</a></li>
-                        <li><a class="nav-link" href="resources.html">Resources</a></li>
-                    </ul>
+                    <img src='./static/assets/images/icons/x.svg' id='hamburger-x' class='hamburger-x' onClick="closeMobileMenu()" />
+                        <a class="mobile-nav-link" href="index.html">Home</a><br>
+                        <a class="mobile-nav-link" href="about.html">About</a><br>
+                        <a class="mobile-nav-link" href="schedule.html">Schedule</a><br>
+                        <a class="mobile-nav-link" href="resources.html">Resources</a>
                 </nav>
             </div>
 
