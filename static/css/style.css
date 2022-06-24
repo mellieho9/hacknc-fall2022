@@ -183,4 +183,5 @@ a {
 
   .top {
     background-color:rgba(97,203,215, 1);
+    margin-right: 0 !important;
   }

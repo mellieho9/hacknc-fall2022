@@ -325,11 +325,14 @@
 
         for (i = 0; i < acc.length; i++) {
             acc[i].addEventListener("click", function () {
-                /* Toggle between adding and removing the "active" class,
-                to highlight the button that controls the panel */
                 this.classList.toggle("active");
 
-                /* Toggle between hiding and showing the active panel */
+                // var shell = this.getElementChildren[0];
+                // // shell.style.animation-name = "spin";
+                // // shell.style.animation-duration = "500ms";
+                // shell.style.transition = "0.5s";
+                // shell.style.transform = "rotate(360deg)";
+                
                 var panel = this.nextElementSibling;
                 let maxHeight = window.getComputedStyle(panel).maxHeight;
                 console.log(maxHeight);
