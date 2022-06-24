@@ -103,18 +103,22 @@
     </main>
 
     <script>
-        function mobileMenu() {
-            var menu = document.getElementById('hamburger');
+        function showMobileMenu() {
             var mobileNav = document.getElementById('mobile-nav');
-            if (mobileNav.style.display === "inline") {
-                mobileNav.style.display = "none";
-                menu.src = "./static/assets/images/icons/hamburger.svg";
-                menu.style.width = "3rem";
-            } else {
-                mobileNav.style.display = "inline";
-                menu.src = "./static/assets/images/icons/x.svg";
-                menu.style.width = "2.5rem";
-            }
+            var hamburger = document.getElementById('hamburger');
+            var x = document.getElementById('hamburger-x');
+            mobileNav.style.display = "flex";
+            hamburger.style.display = "none";
+            x.style.display = "inline";
+        }
+
+        function closeMobileMenu() {
+            var mobileNav = document.getElementById('mobile-nav');
+            var hamburger = document.getElementById('hamburger');
+            var x = document.getElementById('hamburger-x');
+            mobileNav.style.display = "none";
+            hamburger.style.display = "inline";
+            x.style.display = "none";
         }
     </script>
 
