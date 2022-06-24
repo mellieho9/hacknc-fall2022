@@ -153,8 +153,8 @@ top:1px;
       max-width: 45vw;
   }
     
-  .track-box {
-        width: 75vw;
+    .track-box {
+        width: 77vw !important;
       }
 
       .landing {
