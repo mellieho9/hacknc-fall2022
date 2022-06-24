@@ -64,7 +64,7 @@
         <div class="section">
             <div class="flex-container">
 
-                <h3>Countdown</h3>
+                <h3 style="margin-top: 2rem;">Countdown</h3>
 
                 <table id="countdown" class="countdown">
                     <tr>
@@ -84,14 +84,16 @@
             </div>
         </div>
 
-        <div class="section">
+        <img src="./static/assets/images/top.svg" style="margin-bottom: -25px"/>
+
+        <div class="section" style="background-color: rgba(97,203,215, 1)">
             <div class="about-container">
                 <div style="flex: 30%">
                     <img class="image1" src="./static/assets/images/ram.png">
                 </div>
                 <div class="right-div">
                     <h3>What is HackNC?</h3>
-                    <p>HackNC is an annual, student-run hackathon hosted by the University of North Carolina at
+                    <p style="color: #012a3b">HackNC is an annual, student-run hackathon hosted by the University of North Carolina at
                         Chapel Hill. Every fall, hundreds of students arrive at UNC (this year, we'll be having a
                         hybrid hackathon!) to spend the weekend inventing something amazing. We’re one of the
                         largest hackathons in the southeastern United States.</p>
@@ -104,12 +106,17 @@
             </div>
         </div>
 
+        <img src="./static/assets/images/bottom.svg" style="margin-top: -25px"/>
+
         <div class="section">
             <div class="flex-container">
                 <h3>FAQs</h3>
                 <div class="row">
                     <div class="col">
-                        <button class="accordion">What is a hackathon?</button>
+                        <div class="faq-container accordion">
+                            <img class="faq-icon" src="./static/assets/images/icons/shell.png"/>
+                            <p class="faq-text">What is a hackathon?</p>
+                        </div>
                         <div class="panel">
                             <p>A hackathon is a weekend of fun and learning. You'll become a better programmer, meet
                                 awesome people, and make cool stuff. There will also be opportunities to win cool prizes
@@ -117,7 +124,10 @@
                         </div>
                     </div>
                     <div class="col">
-                        <button class="accordion">How does a hybrid hackathon work?</button>
+                        <div class="faq-container accordion">
+                            <img class="faq-icon" src="./static/assets/images/icons/shell.png"/>
+                            <p class="faq-text">What does hybrid hacking mean?</p>
+                        </div>
                         <div class="panel">
                             <p>We are working around the clock to make sure that this year’s hybrid hackathon is as
                                 normal as possible. You will still be able to meet new people, work on awesome projects,
@@ -128,14 +138,20 @@
                 </div>
                 <div class="row">
                     <div class="col">
-                        <button class="accordion">Will there still be swag?</button>
+                        <div class="faq-container accordion">
+                            <img class="faq-icon" src="./static/assets/images/icons/shell.png"/>
+                            <p class="faq-text">Will there still be swag?</p>
+                        </div>
                         <div class="panel">
                             <p>Yes, although we are only able to ship to within the continental United States. Make sure
                                 to indicate that you are interested in recieving swag when you apply.</p>
                         </div>
                     </div>
                     <div class="col">
-                        <button class="accordion">What if I've never hacked before?</button>
+                        <div class="faq-container accordion">
+                            <img class="faq-icon" src="./static/assets/images/icons/shell.png"/>
+                            <p class="faq-text">What if I've never hacked before?</p>
+                        </div>
                         <div class="panel">
                             <p>That's totally fine! We'll have plenty of resources to help you get started, including
                                 beginner workshops, mentors, and more.</p>
@@ -144,7 +160,10 @@
                 </div>
                 <div class="row">
                     <div class="col">
-                        <button class="accordion">Can I hack?</button>
+                        <div class="faq-container accordion">
+                            <img class="faq-icon" src="./static/assets/images/icons/shell.png"/>
+                            <p class="faq-text">Can I hack?</p>
+                        </div>
                         <div class="panel">
                             <p>High schoolers over 18, undergraduates, and graduate students are welcome to participate
                                 as hackers. Professionals interested in mentorship should click the "Get Involved" link
@@ -152,7 +171,10 @@
                         </div>
                     </div>
                     <div class="col">
-                        <button class="accordion">What is a track?</button>
+                        <div class="faq-container accordion">
+                            <img class="faq-icon" src="./static/assets/images/icons/shell.png"/>
+                            <p class="faq-text">What is a track?</p>
+                        </div>
                         <div class="panel">
                             <p>At a hackathon, a track is designed to help focus your ideas into one specific subject
                                 area. We have three tracks for you to choose from, including a general one intended for
@@ -162,7 +184,10 @@
                 </div>
                 <div class="row">
                     <div class="col">
-                        <button class="accordion">How do teams work?</button>
+                        <div class="faq-container accordion">
+                            <img class="faq-icon" src="./static/assets/images/icons/shell.png"/>
+                            <p class="faq-text">How do teams work?</p>
+                        </div>
                         <div class="panel">
                             <p>Teams can be organized prior to HackNC or during the event itself. We will host team
                                 building and pitch events before hacking begins. We don’t hold a strict limit on your
@@ -171,7 +196,10 @@
                         </div>
                     </div>
                     <div class="col">
-                        <button class="accordion">Can I do a hardware hack?</button>
+                        <div class="faq-container accordion">
+                            <img class="faq-icon" src="./static/assets/images/icons/shell.png"/>
+                            <p class="faq-text">Can I do a hardware hack?</p>
+                        </div>
                         <div class="panel">
                             <p>Unfortunately, we are unable to provide hardware this year due to the hybrid nature of
                                 our hackathon. However, you are still welcome to use your own hardware if you really
@@ -181,16 +209,22 @@
                 </div>
                 <div class="row">
                     <div class="col">
-                        <button class="accordion">Can I use old code?</button>
+                        <div class="faq-container accordion">
+                            <img class="faq-icon" src="./static/assets/images/icons/shell.png"/>
+                            <p class="faq-text">Can I use old code?</p>
+                        </div>
                         <div class="panel">
                             <p>You may use all the publicly available code and APIs that you want, but the code you will
                                 be judged on at the end of the hackathon must be new.</p>
                         </div>
                     </div>
                     <div class="col">
-                        <button class="accordion">You didn’t answer my question!</button>
+                        <div class="faq-container accordion">
+                            <img class="faq-icon" src="./static/assets/images/icons/shell.png"/>
+                            <p class="faq-text">You didn’t answer my question!</p>
+                        </div>
                         <div class="panel">
-                            <p>Email us at <a href="mailto:hello@hacknc.com">hello@hacknc.com</a>. We’ll be happy to
+                            <p>Email us at <a class="footer-email" href="mailto:hello@hacknc.com">hello@hacknc.com</a>. We’ll be happy to
                                 answer all of your questions.</p>
                         </div>
                     </div>

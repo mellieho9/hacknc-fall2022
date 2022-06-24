@@ -33,7 +33,7 @@
     max-height: 0;
     background-color: white;
     overflow: hidden;
-    width: 40vw;
+    width: 35vw;
     transition: max-height 0.5s ease-out;
   }
 
@@ -53,7 +53,7 @@
     text-align: center;
   }
   .HackNCButton2020:hover {
-    background-color:rgb(25, 153, 153);
+    background-color: #2999bc;
   }
   .HackNCButton2020:active {
     position:relative;
@@ -121,8 +121,59 @@ top:1px;
   color: white !important;
 }
 
-@media only screen and (max-width: 600px) {
+  td {
+    width: 5vw;
+    text-align: center;
+    padding: 0 1vw;
+  }
+
+  .count-num {
+    color: #012a3b;
+    font-size: 2.5rem;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+    padding-top: 3vh;
+  }
+
+  tr {
+    padding: 0;
+  }
+
+  .countdown {
+    text-align: center;
+  }
+
+  .faq-icon {
+    width: 2rem;
+    height: 2rem;
+    padding-right: 0.75rem;
+    margin: auto; 
+    display: inline-block;
+  }
+
+  .faq-text {
+    margin: auto;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 0.25rem;
+  }
+
+  .faq-container {
+    font-size: 1.15rem;
+    background-color: #83DEF1;
+    padding: 0.75rem;
+    display: inline-block;
+    max-width: 35vw;
+  }
+
+  @media only screen and (max-width: 600px) {
     .accordion {
+      width: 90vw;
+    }
+
+    .faq-container {
+      max-width: 90vw !important;
       width: 90vw;
     }
 
@@ -163,28 +214,8 @@ top:1px;
         background-position: center;
     }
 
-  }
+    .faq-text {
+      margin-top: 0.5rem !important;
+    }
 
-  td {
-    width: 5vw;
-    text-align: center;
-    padding: 0 1vw;
-  }
-
-  .count-num {
-    color: #012a3b;
-    font-size: 2.5rem;
-    font-weight: bold;
-    padding: 0;
-    margin: 0;
-    padding-top: 3vh;
-  }
-
-  tr {
-    padding: 0;
-  }
-
-
-  .countdown {
-    text-align: center;
   }
