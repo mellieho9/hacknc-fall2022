@@ -130,6 +130,12 @@ a {
     p {
         font-size: 1rem;
     }
+
+  .waves {
+    height:40px;
+    min-height:40px;
+  }
+
   }
 
   .waves-container {
@@ -171,13 +177,6 @@ a {
     }
     100% { 
       transform: translate3d(85px,0,0);
-    }
-  }
-  /*Shrinking for mobile*/
-  @media (max-width: 768px) {
-    .waves {
-      height:40px;
-      min-height:40px;
     }
   }
 

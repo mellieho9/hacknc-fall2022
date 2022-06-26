@@ -59,7 +59,7 @@
 
         </div>
 
-            <div class="waves-container">
+            <div class="waves-container" id="waves-container">
                 <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
                     <defs>
                       <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
@@ -121,22 +121,22 @@
             var mobileNav = document.getElementById('mobile-nav');
             var hamburger = document.getElementById('hamburger');
             var x = document.getElementById('hamburger-x');
-            var sched = document.getElementById('sched');
+            var waves = document.getElementById('waves-container');
             mobileNav.style.display = "flex";
             hamburger.style.display = "none";
             x.style.display = "inline";
-            sched.style.display = "none";
+            waves.style.display = "none";
         }
 
         function closeMobileMenu() {
             var mobileNav = document.getElementById('mobile-nav');
             var hamburger = document.getElementById('hamburger');
             var x = document.getElementById('hamburger-x');
-            var sched = document.getElementById('sched');
+            var waves = document.getElementById('waves-container');
             mobileNav.style.display = "none";
             hamburger.style.display = "inline";
             x.style.display = "none";
-            sched.style.display = "inline";
+            waves.style.display = "none";
         }
     </script>
 

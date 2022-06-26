@@ -152,11 +152,11 @@
     .track {
         font-size: 2rem;
     }
-    
+
     .top {
-        margin-top: 5rem;
-        padding-left: 5vw;
-    }
+      padding-top: 3rem;
+      padding-left: 5vw;
+  }
 
     .pic{
       width: 60vw;
