@@ -156,5 +156,9 @@ div.divContainer {
     .title {
         font-size: 1.15rem;
     }
+
+    .badge {
+        display: none !important;
+      }
     
 }

@@ -167,4 +167,8 @@
     width: 75vw;
   }
 
+  .badge {
+    display: none !important;
+  }
+
   }

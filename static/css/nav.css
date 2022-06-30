@@ -35,6 +35,7 @@ nav {
 
 .nav-bar {
     display: inline;
+    flex-direction: horizontal;
 }
 
 .mobile-nav {
@@ -121,4 +122,20 @@ nav {
   .nav-link:where(:hover, :focus-visible) {
     background-size: 100% var(--bg-h);
     background-position-x: left;
+  }
+
+  .nav-button {
+    background-color: #006A94;
+    border-radius:5px;
+    cursor:pointer;
+    color:#ffffff;
+    font-size:22px;
+    padding: 1rem 1rem;
+    text-decoration: none;
+    margin-right: 1rem;
+    text-align: center;
+    border: none;
+  }
+  .nav-button:hover {
+    background-color: #2999bc;
   }
