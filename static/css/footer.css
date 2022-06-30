@@ -25,10 +25,14 @@
     }
 
 .footer-row {
+    display: flex;   
+}
+
+.footer {
     background-image: url("../assets/images/footer.png");
     background-size: cover;
-    display: flex;
     padding: 2rem;
+    text-align: center;
 }
 
 .footer-link {
