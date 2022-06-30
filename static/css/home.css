@@ -147,16 +147,32 @@ top:1px;
   .faq-icon {
     width: 2rem;
     height: 2rem;
-    padding-right: 0.75rem;
     margin: auto; 
     display: inline-block;
+    
   }
+
+  .spin {
+    animation-duration: 500ms;
+    animation-name: spin;
+    animation-timing-function: linear;
+  }
+
+  @keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
 
   .faq-text {
     margin: auto;
     display: inline-block;
     vertical-align: top;
     margin-top: 0.25rem;
+    padding-left: 0.75rem;
   }
 
   .faq-container {

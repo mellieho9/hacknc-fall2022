@@ -26,18 +26,11 @@ nav {
     top: 1vh;
     left: 1vh;
     width: 3rem;
-    height: 3rem;
+    height: 3.5rem;
 }
 
 .logo:hover {
     opacity: 70%;
-}
-
-.badge {
-    width: 7vw;
-    position: absolute;
-    top: 0;
-    right: 1vw;
 }
 
 .nav-bar {
