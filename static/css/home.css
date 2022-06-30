@@ -25,7 +25,8 @@
   }
   
   .active, .accordion:hover {
-    background-color: #2999BC; 
+    background-color: #2999BC !important; 
+    color: white;
   }
   
   .panel {
@@ -148,8 +149,7 @@ top:1px;
     width: 2rem;
     height: 2rem;
     margin: auto; 
-    display: inline-block;
-    
+    display: inline-block; 
   }
 
   .spin {
@@ -165,7 +165,7 @@ top:1px;
     to {
         transform:rotate(360deg);
     }
-}
+  }
 
   .faq-text {
     margin: auto;

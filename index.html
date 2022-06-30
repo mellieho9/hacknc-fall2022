@@ -350,7 +350,13 @@
                         }
                     }
                 }
+                removeSpin(shell);
             });
+        }
+
+        function removeSpin(shell){
+            delay(500);
+            shell.classList.toggle("spin");
         }
     </script>
 
