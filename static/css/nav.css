@@ -8,10 +8,12 @@ li {
     display: inline;
 }
 
-nav {
+.nav-bar {
+    display: flex;
+    flex-direction: row;
     margin-right: 2vw;
     align-items: start;
-    position: absolute;
+    position: fixed;
     top: 3vh;
     right: 7vw;
 }
@@ -22,7 +24,7 @@ nav {
 }
 
 .logo {
-    position: absolute;
+    position: fixed;
     top: 0.75rem;
     left: 0.75rem;
     width: 4rem;
@@ -30,12 +32,8 @@ nav {
 }
 
 .logo:hover {
-    opacity: 70%;
-}
-
-.nav-bar {
-    display: inline;
-    flex-direction: horizontal;
+    opacity: 90%;
+    transform: scale(1.1);
 }
 
 .mobile-nav {
@@ -126,7 +124,7 @@ nav {
 
   .nav-button {
     background-color: #006A94;
-    border-radius:5px;
+    border-radius: 3rem;
     cursor:pointer;
     color:#ffffff;
     font-size:22px;
