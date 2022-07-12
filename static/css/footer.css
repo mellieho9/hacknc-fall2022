@@ -91,6 +91,9 @@
     .footer-row {
         flex-direction: column;
         text-align: center;
+    }
+
+    .footer {
         background-image: url("../assets/images/mobile-footer.png");
     }
 
