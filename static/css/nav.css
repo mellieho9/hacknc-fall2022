@@ -60,6 +60,10 @@ li {
         display: none;
     }
 
+    .nav-container {
+        display: none;
+    }
+
     .logo {
         display: none;
     }
