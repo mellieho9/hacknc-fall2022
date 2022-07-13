@@ -27,7 +27,7 @@
    
     <main id="content container">
 
-        <div class="section top">
+        <div class="nav-container">
 
             <a href="./index.html">
                 <img class="logo" src="./static/assets/images/icons/logo.png">
@@ -36,26 +36,30 @@
             <nav class="nav-bar">
                 <div>
                     <ul>
-                        <li class="nav-item"><a class="nav-link" style="color: white" href="about.html">About</a></li>
-                        <li class="nav-item"><a class="nav-link" style="color: white" href="schedule.html">Schedule</a></li>
-                        <li class="nav-item"><a class="nav-link" style="color: white" href="resources.html">Resources</a></li>
-                        <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSdD2jfx1oMJ3ZB0WFdd7W6zo4VDOas-icrnw9ARnMpDm3n3FQ/viewform" target="_blank"><button class="nav-button">Preregister</button></a></li>
+                        <li class="nav-item"><a class="nav-link" style="color: #012a3b" href="about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link" style="color: #012a3b" href="schedule.html">Schedule</a></li>
+                        <li class="nav-item"><a class="nav-link" style="color: #012a3b" href="resources.html">Resources</a></li>
+                        <li class="nav-item"><a class="nav-link" style="color: #012a3b" href="https://docs.google.com/forms/d/e/1FAIpQLSdD2jfx1oMJ3ZB0WFdd7W6zo4VDOas-icrnw9ARnMpDm3n3FQ/viewform" target="_blank">Preregister</a></li>
                     </ul>
                 </div>
             </nav>
-            <div class="row mobile-bar">
-                <img src='./static/assets/images/icons/hamburger.svg' id='hamburger' class='hamburger' onClick="showMobileMenu()" />
-                <nav class="mobile-nav" id="mobile-nav">
-                    <img src='./static/assets/images/icons/x.svg' id='hamburger-x' class='hamburger-x' onClick="closeMobileMenu()" />
-                        <a class="mobile-nav-link" href="index.html">Home</a><br>
-                        <a class="mobile-nav-link" href="about.html">About</a><br>
-                        <a class="mobile-nav-link" href="schedule.html">Schedule</a><br>
-                        <a class="mobile-nav-link" href="resources.html">Resources</a><br>
-                        <a class="mobile-nav-link" href="https://docs.google.com/forms/d/e/1FAIpQLSdD2jfx1oMJ3ZB0WFdd7W6zo4VDOas-icrnw9ARnMpDm3n3FQ/viewform" target="_blank">Preregister</a>
-                </nav>
-            </div>
+        </div>
 
-            <h1>Schedule</h1>
+        <div class="row mobile-bar">
+            <img src='./static/assets/images/icons/hamburger.svg' id='hamburger' class='hamburger' onClick="showMobileMenu()" />
+            <nav class="mobile-nav" id="mobile-nav">
+                <img src='./static/assets/images/icons/x.svg' id='hamburger-x' class='hamburger-x' onClick="closeMobileMenu()" />
+                    <a class="mobile-nav-link" href="index.html">Home</a><br>
+                    <a class="mobile-nav-link" href="about.html">About</a><br>
+                    <a class="mobile-nav-link" href="schedule.html">Schedule</a><br>
+                    <a class="mobile-nav-link" href="resources.html">Resources</a><br>
+                    <a class="mobile-nav-link" href="https://docs.google.com/forms/d/e/1FAIpQLSdD2jfx1oMJ3ZB0WFdd7W6zo4VDOas-icrnw9ARnMpDm3n3FQ/viewform" target="_blank">Preregister</a>
+            </nav>
+        </div>
+
+        <div class="section top">
+
+            <h1 class="heading">Schedule</h1>
 
         </div>
 
@@ -85,9 +89,10 @@
                 <div class="footer-row">
                     <div style="flex: 40vw; text-align: center; margin-left: 5vw;">
                         <br>
-                        <h1 class="footer-title">Hack NC 2022</h1>
+                        <h1 class="footer-title">HackNC 2022</h1>
                         <p class="footer-text"> Contact us at <a class="footer-email"
                                 href="mailto:hello@hacknc.com">hello@hacknc.com!</a></p>
+                                <p style="font-size: 1rem"><a class="footer-link" href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf">MLH code of conduct</a></p>
                     </div>
         
                     <div style="flex: 20vw;  margin-left: 5vw;">
@@ -118,8 +123,6 @@
                 </div>
         
                 <br>
-        
-                <p style="font-size: 1rem">We have adopted the <a class="footer-link" href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf">MLH code of conduct</a>, which all attendees will be required to adhere to.</p>
            
             </div>
 

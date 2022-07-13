@@ -42,6 +42,10 @@ a {
     color: #2999BC;
 }
 
+.heading {
+  padding-top: 5%;
+}
+
 .section {
     padding: 1.5rem;
 }
