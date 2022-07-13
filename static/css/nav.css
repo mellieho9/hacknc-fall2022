@@ -11,19 +11,19 @@ li {
 .nav-bar {
     display: flex;
     flex-direction: row;
-    margin-right: 2vw;
-    align-items: start;
-    position: fixed;
+    margin-right: 150px;
     top: 3vh;
     right: 7vw;
 }
 
 .nav-container {
     width: 100vw;
-    height: 10vh;
+    padding: 20px;
     position: fixed;
     top: 0;
-    background-color: #a0cce4;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .logo {
@@ -37,6 +37,12 @@ li {
 .logo:hover {
     opacity: 90%;
     transform: scale(1.1);
+}
+
+.logo-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .mobile-nav {
@@ -115,32 +121,23 @@ li {
     transition: background-size 350ms;
     --bg-h: 2px;
     text-decoration: none;
-    font-weight: 2;
-    color: #012a3b;
-    font-size: 1.5rem;
+    font-weight: bolder;
+    font-size: 1.2rem;
     font-family: 'Montserrat', sans-serif;
-    margin: 1rem;
+    margin: .8rem;
     line-height: 1;
     padding: 0;
     padding-bottom: 2px;
+    color: #012a3b;
   }
   .nav-link:where(:hover, :focus-visible) {
     background-size: 100% var(--bg-h);
     background-position-x: left;
   }
 
-  .nav-button {
-    background-color: #006A94;
-    border-radius: 3rem;
-    cursor:pointer;
-    color:#ffffff;
-    font-size:22px;
-    padding: 1rem 1rem;
+  .nav-item {
     text-decoration: none;
-    margin-right: 1rem;
-    text-align: center;
-    border: none;
-  }
-  .nav-button:hover {
-    background-color: #2999bc;
+    font-size: 1.2rem;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1;
   }
