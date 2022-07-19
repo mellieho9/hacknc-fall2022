@@ -3,10 +3,155 @@
     padding: 1.5rem;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .landing {
-  background-image: url("../assets/images/landing.png");
+  /*background-image: url("../assets/images/landing.png");*/
   background-size: cover;
   height: 100vh;
+  background-color: #8bb7d2;
+}
+
+#particles {
+  width: 100vw;
+  height: 110vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.submarine {
+  position: absolute;
+  top: 15vh;
+  right: 10vw;
+  animation: slide_in 5s;
+}
+
+@keyframes slide_in
+{
+  0%
+  {
+    right: -25%;
+  }
+  100%
+  {
+    right: 10vw;
+  }
+}
+
+.fish {
+  position: absolute;
+}
+
+.fish1 {
+  top: 30%;
+  height: 120px;
+  animation: swim_left 10s linear infinite;
+}
+
+.fish2 {
+  top: 50%;
+  height: 60px;
+  animation: swim_left 25s linear infinite;
+}
+
+.fish3 {
+  top: 25%;
+  height: 80px;
+  animation: glide 35s linear infinite;
+}
+
+.fish4 {
+  top: 70%;
+  height: 80px;
+  animation: swim_right 20s linear infinite;
+}
+
+.fish5 {
+  top: 30%;
+  height: 80px;
+  animation: swim_right 18s linear infinite;
+}
+
+@keyframes swim_left
+{
+  0%
+  {
+    transform: translateY(-50px);
+    left: -25%;
+  }
+  25%
+  {
+    transform: translateY(0px);
+  }
+  50%
+  {
+    transform: translateY(50px);
+  }
+  75%
+  {
+    transform: translateY(0px);
+  }
+  100%
+  {
+    transform: translateY(-50px);
+    left: 125%;
+  }
+}
+
+@keyframes swim_right
+{
+  0%
+  {
+    transform: translateY(-50px);
+    right: -25%;
+  }
+  25%
+  {
+    transform: translateY(0px);
+  }
+  50%
+  {
+    transform: translateY(50px);
+  }
+  75%
+  {
+    transform: translateY(0px);
+  }
+  100%
+  {
+    transform: translateY(-50px);
+    right: 125%;
+  }
+}
+
+@keyframes glide
+{
+  0%
+  {
+    transform: translateY(-25px);
+    left: -25%;
+  }
+  25%
+  {
+    transform: translateY(0px);
+  }
+  50%
+  {
+    transform: translateY(25px);
+  }
+  75%
+  {
+    transform: translateY(0px);
+  }
+  100%
+  {
+    transform: translateY(-25px);
+    left: 125%;
+  }
 }
 
 /* faq */
@@ -232,6 +377,18 @@ top:1px;
 
     .faq-text {
       margin-top: 0.5rem !important;
+    }
+    
+    .submarine {
+      display: none;
+    }
+
+    .fish {
+      display: none;
+    }
+
+    #particles {
+      display: none;
     }
 
   }
