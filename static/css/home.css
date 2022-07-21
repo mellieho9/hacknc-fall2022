@@ -1,25 +1,8 @@
-.sponsor-img {
-    max-width: 20vw;
-    padding: 1.5rem;
-}
-
-/* body {
-  overflow-x: hidden;
-} */
-
-* {
-  user-select: none;
-  -ms-user-select: none;
-  outline: 0;
-  margin: 0;
-  padding: 0;
-  -webkit-tap-highlight-color: rgba(0,0,0,0);
-}
-
 html {
   width: 100%;
   height: 100%;
 }
+
 body {
   width: 100%;
   height: 100%;
@@ -34,10 +17,9 @@ canvas {
 }
 
 .landing {
-  /*background-image: url("../assets/images/landing.png");*/
+  background-image: url("../assets/images/background.png");
   background-size: cover;
   height: 100vh;
-  background-color: #8bb7d2;
 }
 
 #particles {
@@ -54,6 +36,24 @@ canvas {
   top: 15vh;
   right: 10vw;
   animation: slide_in 5s;
+}
+
+.old-well {
+  position: absolute;
+  left: -2vw;
+  top: 4.5vh;
+  height: 110vh;
+}
+
+.corals {
+  position: absolute;
+  right: 0;
+  bottom: 2vh;
+  width: 70vw;
+}
+
+#canvas2 {
+  transform: rotate(180deg);
 }
 
 @keyframes slide_in
@@ -207,6 +207,7 @@ canvas {
     overflow: hidden;
     width: 35vw;
     transition: max-height 0.5s ease-out;
+    color: #012a3b;
   }
 
   .HackNCButton2020 {
@@ -236,6 +237,11 @@ canvas {
   display: inline;
   width: 25vw;
   animation: tilt 2s linear infinite;
+}
+
+.sponsor-img {
+  max-width: 20vw;
+  padding: 1.5rem;
 }
 
 @keyframes tilt {
@@ -434,6 +440,10 @@ top:1px;
 
     #particles {
       display: none;
+    }
+
+    canvas {
+      height: 20vh;
     }
 
   }

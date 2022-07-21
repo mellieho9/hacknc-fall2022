@@ -112,8 +112,8 @@ class WaveGroup {
 }
 
 class Waves {
-    constructor() {
-        this.canvas = document.getElementById('canvas');
+    constructor(id_name) {
+        this.canvas = document.getElementById(id_name);
         this.ctx = this.canvas.getContext('2d');
 
         this.waveGroup = new WaveGroup();
@@ -147,5 +147,6 @@ class Waves {
 }
 
 window.onload = () => {
-    new Waves();
+    new Waves("canvas");
+    new Waves("canvas2");
 }
