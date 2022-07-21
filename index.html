@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head lang="en-us">
+<head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=0">
 
     <meta property="og:url" content="https://hacknc.com/">
     <meta property="og:type" content="website">
@@ -19,47 +20,66 @@
     <link rel="stylesheet" href="static/css/footer.css">
 
     <script src="https://kit.fontawesome.com/be677f01a1.js" crossorigin="anonymous"></script>
-
+    <script type="text/javascript" src="./static/js/mobile-menu.js"></script>
+    <script type="text/javascript" src="./static/js/home-sticky-nav.js"></script>
+    <script type="text/javascript" src="./static/js/include.js"></script>
+    <script type="text/javascript" src="./static/js/toggle-panels.js"></script>
+    <script type="text/javascript" src="./static/js/countdown.js"></script>
+    <script type="text/javascript" src="./static/js/faq.js"></script>
+    <script src="./static/js/waves.js"></script>
 </head>
 
 <a id="mlh-trust-badge" class="badge" style="display:block;max-width:100px;min-width:60px;position:fixed;right:15px;top:0;width:10%;z-index:10000" href="https://mlh.io/na?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2023-season&utm_content=gray" target="_blank"><img src="https://s3.amazonaws.com/logged-assets/trust-badge/2023/mlh-trust-badge-2023-gray.svg" alt="Major League Hacking 2023 Hackathon Season" style="width:100%"></a>
 
 <body>
 
-    <div class="nav-container">
-
-        <a class="logo-flex" href="./index.html">
-            <img class="logo" src="./static/assets/images/icons/logo.png">
-            <!-- <span class="nav-item"><b>HackNC 2022</b></span> -->
-        </a>
-
-        <nav class="nav-bar">
-            <ul>
-                <li class="nav-item"><a class="nav-link"href="about.html">About</a></li>
-                <li class="nav-item"><a class="nav-link" href="schedule.html">Schedule</a></li>
-                <li class="nav-item"><a class="nav-link" href="resources.html">Resources</a></li>
-                <li class="nav-item"><a class="nav-link" href="https://docs.google.com/forms/d/e/1FAIpQLSdD2jfx1oMJ3ZB0WFdd7W6zo4VDOas-icrnw9ARnMpDm3n3FQ/viewform" target="_blank">Preregister</a></li>
-            </ul>
-        </nav>
-    </div>
-
     <main id="content container">
 
-        <div class="landing section" id="landing">
-            <div class="flex-container">    
-                <div class="row mobile-bar">
-                    <img src='./static/assets/images/icons/hamburger.svg' id='hamburger' class='hamburger' onClick="showMobileMenu()" />
-                    <nav class="mobile-nav" id="mobile-nav">
-                        <img src='./static/assets/images/icons/x.svg' id='hamburger-x' class='hamburger-x' onClick="closeMobileMenu()" />
-                            <a class="mobile-nav-link" href="index.html">Home</a><br>
-                            <a class="mobile-nav-link" href="about.html">About</a><br>
-                            <a class="mobile-nav-link" href="schedule.html">Schedule</a><br>
-                            <a class="mobile-nav-link" href="resources.html">Resources</a><br>
-                            <a class="mobile-nav-link" href="https://docs.google.com/forms/d/e/1FAIpQLSdD2jfx1oMJ3ZB0WFdd7W6zo4VDOas-icrnw9ARnMpDm3n3FQ/viewform" target="_blank">Preregister</a>
-                    </nav>
-                </div>
-            </div>
+        <div class="nav-container">
+
+            <a class="logo-flex" href="./index.html">
+                <img class="logo" src="./static/assets/images/icons/logo.png">
+            </a>
+        
+            <nav class="nav-bar">
+                <ul>
+                    <li class="nav-item"><a class="nav-link"href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="schedule.html">Schedule</a></li>
+                    <li class="nav-item"><a class="nav-link" href="resources.html">Resources</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://docs.google.com/forms/d/e/1FAIpQLSdD2jfx1oMJ3ZB0WFdd7W6zo4VDOas-icrnw9ARnMpDm3n3FQ/viewform" target="_blank">Preregister</a></li>
+                </ul>
+            </nav>
         </div>
+
+        <div class="landing section" id="landing">
+            <div id="particles" class="landing-particles">
+                <img src="./static/assets/images/fish1.png" class="fish fish1">
+                <img src="./static/assets/images/fish2.png" class="fish fish2">
+                <img src="./static/assets/images/fish3.png" class="fish fish3">
+                <img src="./static/assets/images/fish4.png" class="fish fish4">
+                <img src="./static/assets/images/fish5.png" class="fish fish5">
+                <img src="./static/assets/images/submarine.png" class="submarine">
+                <img src="./static/assets/images/old-well-coral-reef.png" class="old-well">
+                <img src="./static/assets/images/foreground-corals.png" class="corals">
+            </div>
+
+            <div class="row mobile-bar">
+                <img src='./static/assets/images/icons/hamburger.svg' id='hamburger' class='hamburger' onClick="showMobileMenu()" />
+                <nav class="mobile-nav" id="mobile-nav">
+                    <img src='./static/assets/images/icons/x.svg' id='hamburger-x' class='hamburger-x' onClick="closeMobileMenu()" />
+                        <a class="mobile-nav-link" href="index.html">Home</a><br>
+                        <a class="mobile-nav-link" href="about.html">About</a><br>
+                        <a class="mobile-nav-link" href="schedule.html">Schedule</a><br>
+                        <a class="mobile-nav-link" href="resources.html">Resources</a><br>
+                        <a class="mobile-nav-link" href="https://docs.google.com/forms/d/e/1FAIpQLSdD2jfx1oMJ3ZB0WFdd7W6zo4VDOas-icrnw9ARnMpDm3n3FQ/viewform" target="_blank">Preregister</a>
+                </nav>
+            </div>
+
+        </div>
+
+        <script type="text/javascript" src="./static/js/particles.js"></script>
+        <script type="text/javascript" src="./static/js/background.js"></script>
+        <script type="text/javascript" src="./static/js/footer.js"></script>
 
         <div class="section countdown">
             <div class="flex-container">
@@ -84,18 +104,18 @@
             </div>
         </div>
 
-        <img src="./static/assets/images/top.svg" style="margin-bottom: -25px"/>
+        <canvas id="canvas"></canvas>
 
-        <div class="section" style="background-color: rgba(97,203,215, 1)">
-            <div class="about-container">
+        <div class="section" style="background-color: rgba(59,181,197,255)">
+
+            <div class="about-container" style="margin-top: 0">
                 <div style="flex: 30%">
                     <img class="image1" src="./static/assets/images/ram.png">
                 </div>
                 <div class="right-div">
                     <h3>What is HackNC?</h3>
                     <p style="color: #012a3b">HackNC is an annual, student-run hackathon hosted by the University of North Carolina at
-                        Chapel Hill. Every fall, hundreds of students arrive at UNC (this year, we'll be having a
-                        hybrid hackathon!) to spend the weekend inventing something amazing. We’re one of the
+                        Chapel Hill. Every fall, hundreds of students arrive at UNC to spend the weekend inventing something amazing. We’re one of the
                         largest hackathons in the southeastern United States.</p>
                     <br>
                     <a href="./about.html" class="HackNCButton2020" style="margin-left: 0" target="_blank">
@@ -106,7 +126,9 @@
             </div>
         </div>
 
-        <img src="./static/assets/images/bottom.svg" style="margin-top: -25px"/>
+        <canvas id="canvas2"></canvas>
+
+        <!-- <img src="./static/assets/images/bottom.svg" style="margin-top: -25px"/> -->
 
         <div class="section">
             <div class="flex-container">
@@ -323,127 +345,6 @@
         </div>
 
     </main>
-
-    <script>
-        var acc = document.getElementsByClassName("accordion");
-        var i;
-        var questions = document.getElementsByClassName("panel");
-
-        for (i = 0; i < acc.length; i++) {
-            acc[i].addEventListener("click", function () {
-                this.classList.toggle("active");
-                var shell = this.children[0];
-                shell.classList.toggle("spin");
-                var panel = this.nextElementSibling;
-                let maxHeight = window.getComputedStyle(panel).maxHeight;
-                console.log(maxHeight);
-                console.log(panel.style.maxHeight)
-                if (maxHeight !== '0px') {
-                    panel.style.maxHeight = 0;
-                } else {
-                    panel.style.maxHeight = panel.scrollHeight + "px";
-                    for (let j= 0; j<questions.length; j++) {
-                        if (i !== j && window.getComputedStyle(questions[j]).maxHeight !== '0px') {
-                            questions[j].style.maxHeight = 0;
-                            questions[j].previousElementSibling.classList.toggle("active")
-                        }
-                    }
-                }
-                removeSpin(shell);
-            });
-        }
-
-        function removeSpin(shell){
-            delay(500);
-            shell.classList.toggle("spin");
-        }
-    </script>
-
-    <script>
-        function showMobileMenu() {
-            var mobileNav = document.getElementById('mobile-nav');
-            var hamburger = document.getElementById('hamburger');
-            var badge = document.getElementById('mlh-trust-badge');
-            var x = document.getElementById('hamburger-x');
-            mobileNav.style.display = "flex";
-            hamburger.style.display = "none";
-            x.style.display = "inline";
-            badge.style.display = "none";
-        }
-
-        function closeMobileMenu() {
-            var mobileNav = document.getElementById('mobile-nav');
-            var hamburger = document.getElementById('hamburger');
-            var x = document.getElementById('hamburger-x');
-            mobileNav.style.display = "none";
-            hamburger.style.display = "inline";
-            x.style.display = "none";
-            badge.style.display = "none";
-        }
-    </script>
-
-    <script>
-        function togglepanel1() {
-            var panel = document.getElementById('panel1');
-            if (window.getComputedStyle(panel).maxHeight === "0px") {
-                panel.style.maxHeight = panel.scrollHeight + "px";
-            } else {
-                panel.style.maxHeight = 0;
-            }
-        }
-
-        function togglepanel2() {
-            var panel = document.getElementById('panel2');
-            if (window.getComputedStyle(panel).maxHeight === "0px") {
-                panel.style.maxHeight = panel.scrollHeight + "px";
-            } else {
-                panel.style.maxHeight = 0;
-            }
-        }
-    </script>
-
-    <script>
-        var countDownDate = new Date("Nov 4, 2022 00:00:00").getTime();
-
-        var x = setInterval(function () {
-
-            var now = new Date().getTime();
-
-            var distance = countDownDate - now;
-
-            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-            document.getElementById("days").innerHTML = days;
-            document.getElementById("hours").innerHTML = hours;
-            document.getElementById("minutes").innerHTML = minutes;
-            document.getElementById("seconds").innerHTML = seconds;
-             + " Days, " + hours + " Hours, "
-                + minutes + " Minutes, " + seconds + " Seconds ";
-
-            if (distance < 0) {
-                clearInterval(x);
-                document.getElementById("countdown").style.display = none;
-            }
-        }, 1000);
-    </script>
-
-    <script>
-        window.onscroll = function() {myFunction()};
-        let navBar = document.getElementsByClassName('nav-container');
-        console.log(navBar[0]);
-
-        let landing = document.getElementsByClassName("countdown");
-        function myFunction() {
-            if (window.pageYOffset >= landing[0].offsetTop) {
-                navBar[0].style.backgroundColor = "white";
-            } else {
-                navBar[0].style.backgroundColor = "transparent";
-            }
-        }
-    </script>
 
 </body>
 
