@@ -19,6 +19,8 @@
     <link rel="stylesheet" href="static/css/footer.css">
 
     <script src="https://kit.fontawesome.com/be677f01a1.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./static/js/mobile-menu.js"></script>
+    <script type="text/javascript" src="./static/js/sticky-nav.js"></script>
 </head>
 
 <a id="mlh-trust-badge" class="badge" style="display:block;max-width:100px;min-width:60px;position:fixed;right:15px;top:0;width:10%;z-index:10000" href="https://mlh.io/na?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2023-season&utm_content=gray" target="_blank"><img src="https://s3.amazonaws.com/logged-assets/trust-badge/2023/mlh-trust-badge-2023-gray.svg" alt="Major League Hacking 2023 Hackathon Season" style="width:100%"></a>
@@ -360,46 +362,6 @@
         <br>
    
     </div>
-
-    <script>
-        function showMobileMenu() {
-            var mobileNav = document.getElementById('mobile-nav');
-            var hamburger = document.getElementById('hamburger');
-            var x = document.getElementById('hamburger-x');
-            var waves = document.getElementById('waves-container');
-            mobileNav.style.display = "flex";
-            hamburger.style.display = "none";
-            x.style.display = "inline";
-            waves.style.display = "none";
-        }
-
-        function closeMobileMenu() {
-            var mobileNav = document.getElementById('mobile-nav');
-            var hamburger = document.getElementById('hamburger');
-            var x = document.getElementById('hamburger-x');
-            var waves = document.getElementById('waves-container');
-            mobileNav.style.display = "none";
-            hamburger.style.display = "inline";
-            x.style.display = "none";
-            waves.style.display = "none";
-        }
-    </script>
-
-<script>
-    window.onscroll = function() {myFunction()};
-    let navBar = document.getElementsByClassName('nav-container');
-    console.log(navBar[0]);
-
-    let landing = document.getElementsByClassName("waves-container");
-    function myFunction() {
-        if (window.pageYOffset >= landing[0].offsetTop) {
-            navBar[0].style.backgroundColor = "white";
-        } else {
-            navBar[0].style.backgroundColor = "transparent";
-        }
-    }
-</script>
-
 
 </body>
 

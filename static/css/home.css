@@ -23,12 +23,15 @@ canvas {
 }
 
 #particles {
+  z-index: 1;
+}
+
+.landing-particles {
   width: 100vw;
   height: 110vh;
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 1;
 }
 
 .submarine {
@@ -41,14 +44,14 @@ canvas {
 .old-well {
   position: absolute;
   left: -2vw;
-  top: 4.5vh;
+  top: 5vh;
   height: 110vh;
 }
 
 .corals {
   position: absolute;
   right: 0;
-  bottom: 2vh;
+  bottom: 1.75vh;
   width: 70vw;
 }
 
