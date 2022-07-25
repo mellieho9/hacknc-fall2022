@@ -25,7 +25,6 @@
     <script type="text/javascript" src="./static/js/include.js"></script>
     <script type="text/javascript" src="./static/js/toggle-panels.js"></script>
     <script type="text/javascript" src="./static/js/countdown.js"></script>
-    <script type="text/javascript" src="./static/js/faq.js"></script>
     <script src="./static/js/waves.js"></script>
 </head>
 
@@ -345,6 +344,35 @@
         </div>
 
     </main>
+
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+        var questions = document.getElementsByClassName("panel");
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var shell = this.children[0];
+                shell.classList.toggle("spin");
+                var panel = this.nextElementSibling;
+                let maxHeight = window.getComputedStyle(panel).maxHeight;
+                console.log(maxHeight);
+                console.log(panel.style.maxHeight)
+                if (maxHeight !== '0px') {
+                    panel.style.maxHeight = 0;
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                    for (let j= 0; j<questions.length; j++) {
+                        if (i !== j && window.getComputedStyle(questions[j]).maxHeight !== '0px') {
+                            questions[j].style.maxHeight = 0;
+                            questions[j].previousElementSibling.classList.toggle("active")
+                        }
+                    }
+                }
+            });
+        }
+    </script>
 
 </body>
 
