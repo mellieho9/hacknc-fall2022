@@ -8,3 +8,11 @@
       }
 
   }
+
+script {
+    z-index: 1;
+}
+
+.mobile-nav {
+    z-index: 2;
+}
