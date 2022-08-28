@@ -59,6 +59,8 @@
     justify-content: center;
     flex-wrap: wrap;
     max-width: 90vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
 }
 
 .img {
@@ -90,6 +92,34 @@
 .HackNCButton2020:active {
 	position:relative;
 	top:1px;
+}
+
+.resource-button {
+	background-color: #006A94;
+	border-radius:20px;
+	display:block;
+	cursor:pointer;
+	color:#ffffff;
+	padding: 1rem;
+	text-decoration:none;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  float: left;
+  text-align: center;
+  width: 15vw;
+  height: 7vw;
+}
+.resource-button:hover {
+	background-color: #2999bc;
+}
+.resource-button:active {
+	position:relative;
+	top:1px;
+}
+
+.resource-text {
+  font-size: 20px;
 }
 
 .past-event-pictures {
